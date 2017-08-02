@@ -58,6 +58,7 @@ public class PlaceInfo extends AppCompatActivity {
                     .load("http://bwhere.vn/uploads/small/" + url.split("/")[i])
                     .error(R.mipmap.ic_launcher)
                     .resize(80,80)
+                    .placeholder( R.drawable.progress_animation )
                     .into(image);
             layout.addView(image);
             image.setOnClickListener(new View.OnClickListener() {
@@ -66,6 +67,7 @@ public class PlaceInfo extends AppCompatActivity {
                     Picasso.with(getApplicationContext())
                             .load("http://bwhere.vn/uploads/big/" + url.split("/")[k])
                             .error(R.mipmap.ic_launcher)
+                            .placeholder( R.drawable.progress_animation )
                             .into(imageView);
                 }
             });
@@ -76,6 +78,7 @@ public class PlaceInfo extends AppCompatActivity {
                     .load("http://bwhere.vn/uploads/big/" + url.split("/")[0])
                     .error(R.mipmap.ic_launcher)
                     .fit().centerInside()
+                    .placeholder( R.drawable.progress_animation )
                     .into(imageView);
         }else{
             imageView.setImageResource(R.drawable.no_image);

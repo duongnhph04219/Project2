@@ -30,6 +30,7 @@ import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.squareup.picasso.NetworkPolicy;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
@@ -258,7 +259,9 @@ public class MainActivity extends AppCompatActivity implements LocationListener,
             String urlImage = marker.getSnippet().split("/")[1];
             Picasso.with(getApplicationContext())
                     .load("http://bwhere.vn/uploads/small/" + urlImage)
+                    .networkPolicy(NetworkPolicy.OFFLINE)
                     .error(R.mipmap.ic_launcher)
+                    .placeholder(R.drawable.progress_animation)
                     .resize(200, 200)
                     .into(image);
             return myContentsView;
