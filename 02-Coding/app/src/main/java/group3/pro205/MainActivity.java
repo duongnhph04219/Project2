@@ -317,7 +317,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener,
                 myMap.setOnInfoWindowClickListener(new GoogleMap.OnInfoWindowClickListener() {
                     @Override
                     public void onInfoWindowClick(Marker marker) {
-                        Intent it = new Intent(MainActivity.this, placeinfo.class);
+                        Intent it = new Intent(MainActivity.this, PlaceInfo.class);
                         it.putExtra("name", marker.getTitle());
                         it.putExtra("adress", markeradress.get(marker));
                         it.putExtra("longdc", markerlongdc.get(marker));
