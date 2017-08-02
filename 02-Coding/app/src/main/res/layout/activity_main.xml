@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/fragment"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/menucatalory"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:background="#333333">
+
+            <ImageButton
+                android:id="@+id/imgscene"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:contentDescription="@string/none"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/scene" />
+
+            <ImageButton
+                android:id="@+id/imgpagoda"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/imgrestaurant"
+                android:contentDescription="@string/none"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/pagoda" />
+
+            <ImageButton
+                android:id="@+id/imgrestaurant"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/imgscene"
+                android:contentDescription="@string/none"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/restaurant" />
+
+            <ImageButton
+                android:id="@+id/imgatm"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/imgpagoda"
+                android:contentDescription="@string/none"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/atm" />
+
+            <ImageButton
+                android:id="@+id/imgful"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/imgatm"
+                android:contentDescription="@string/none"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/fuel" />
+
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/imgout"
+            android:layout_width="70dp"
+            android:layout_height="86dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="60dp"
+            android:layout_marginLeft="-10dp"
+            android:contentDescription="@string/none"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/out" />
+
+        <RelativeLayout
+            android:id="@+id/inbt"
+            android:layout_width="95dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="-45dp"
+            android:layout_toEndOf="@+id/menucatalory">
+
+            <ImageButton
+                android:id="@+id/imgin"
+                android:layout_width="87dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="27dp"
+                android:contentDescription="@string/none"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/in" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</android.support.v4.widget.DrawerLayout>
+

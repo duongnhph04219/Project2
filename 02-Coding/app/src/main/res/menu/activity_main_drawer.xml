@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_scene"
+            android:icon="@drawable/atm"
+            android:title="@string/scene" />
+        <item
+            android:id="@+id/nav_pagoda"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/pagoda" />
+        <item
+            android:id="@+id/nav_restaurant"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/restaurant" />
+        <item
+            android:id="@+id/nav_atm"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/atm" />
+        <item
+            android:id="@+id/nav_fuel"
+            android:icon="@drawable/fuel"
+            android:title="@string/fuel" />
+    </group>
+
+
+
+</menu>
