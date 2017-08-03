@@ -1,4 +1,4 @@
-# Project2 - Dự Án 2 - Pro205.1 - FPT Polytechnic Hanoi - Summer 2017
+# Dự Án 2 - PRO205.1 - FPT Polytechnic Hanoi - Summer 2017
 Teacher: Nguyễn Hữu Huy
 Teammate:
 Nguyễn Hồng Dương - Developer
